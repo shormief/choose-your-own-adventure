@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choose Your Own Adventure</title>
+		<link rel="stylesheet" type="text/css" href="startGame.css">
+		<script src="script.js" defer></script>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Palanquin+Dark|Quicksand|Raleway" rel="stylesheet">
+		<link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/globe-icon.png">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<!-- top -->
+		<div id="hero">
+			<div id="navbar">
+				<nav>
+					<a href="./index.html#games" class="other-links">Games</a>
+					<a href="./index.html"><img src="./assets/graphic.PNG"></a>
+					<a href="about.html" class="other-links">About</a>
+				</nav>
+			</div>
+			<div id="flex-heading">
+				<div class="game-heading">
+					<h1>Game One</h1>
+				</div>
+				<div class="game-heading">
+					<h3>The adventure awaits you...</h3>
+				</div>
+				<div class="game-buttons">
+					<!-- links to the html page -->
+					<a class="active" href="play.html">PLAY</a>
+					<!-- scrolls to instructions -->
+					<button type="button" onclick="toInstructions()"><a class="active">INSTRUCTIONS</a></button>
+				</div>
+			</div>
+		</div>
+		<!-- INSTRUCTIONS -->
+		<div id="instructions">
+			<h3>Instructions</h3>
+			<p>The game works like a text adventure game. There is the text that details the story and the buttons for each option you can take to progress through the game. Each option will lead to a different scenario, so choose wisely.</p>
+			<p>Once you click play, you will be taken to the game. Remember to read the story first, then choose an option. Have fun!</p>
+			<!-- links to the html page -->
+			<a class="play-instructions" href="play.html">PLAY</a>
+		</div>
+	</body>
+</html>

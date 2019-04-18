@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choose Your Own Adventure</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js" defer></script>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Palanquin+Dark|Quicksand" rel="stylesheet">
+		<link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/globe-icon.png">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<!-- TOP -->
+		<div id=top>
+			<div class="logo">
+				<a href="index.html"><img src="./assets/snip-logo.PNG"></a>
+			</div>
+			<div id="navbar">
+				<nav>
+					<a href="#games">Games</a>
+					<a href="about.html" class="other-links">About</a>
+				</nav>
+			</div>
+			<!-- FEATURED GAME -->
+			<div id="featured-game">
+				<!-- A-IMAGE -->
+				<div id="featured-img">
+					<img src="./assets/game2.jpeg" alt="Random stock image">
+				</div>
+				<!-- B-DESCRIPTION -->
+				<div id="featured-description">
+					<h1>Featured Game</h1>
+					<h2>Game One</h2>
+					<p>Lorem ipsum dolor sit amet, has discere ornatus cu. Ius erat labores iudicabit in. Per ea volumus appellantur, ferri idque petentium vel eu. Fabulas delectus eum eu. Sit et partiendo dissentiet. Qui et mutat salutandi.</p>
+					<p>Eum et elit dicit disputando, ex has meis dicam adolescens, quod sumo te pri. Exerci eligendi et sea. Ad pro noster voluptatibus. Ea regione verterem pri. Te mucius aliquip perpetua ius. Nullam tibique delicatissimi sed eu, ad mel decore accusam percipit. Purto consul ex quo, liber oportere cu mel, natum facilis liberavisse an his.</p>
+					<p class="read-more-transparent"></p>
+				</div>
+				<!-- C-BUTTONS -->
+				<div id="featured-buttons">
+					<button type="button" onclick="readMore()"><a class="featured-button" id="read-more">READ MORE</a></button>
+					<a href="startGame.html" class="featured-button" id="play">PLAY</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- LIST OF GAMES -->
+		<div id="games">
+			<h1>Games</h1>
+			<div id="first-game">
+				<img src="./assets/first-game.jpeg">
+				<div class="text">
+					<h2>Game One</h2>
+					<p>Lorem ipsum dolor sit amet, has discere ornatus cu. Ius erat labores iudicabit in. Per ea volumus appellantur, ferri idque petentium vel eu. Fabulas delectus eum eu. Sit et partiendo dissentiet. Qui et mutat salutandi.</p>
+					<p>Eum et elit dicit disputando, ex has meis dicam adolescens, quod sumo te pri. Exerci eligendi et sea. Ad pro noster voluptatibus. Ea regione verterem pri. Te mucius aliquip perpetua ius. Nullam tibique delicatissimi sed eu, ad mel decore accusam percipit. Purto consul ex quo, liber oportere cu mel, natum facilis liberavisse an his.</p>
+					<!-- Link to start the game -->
+					<div class="play-button">
+						<a class="active" href="startGame.html">PLAY</a>
+					</div>
+				</div>
+			</div>
+			<div id="second-game">
+				<img src="./assets/game1.png">
+				<div class="text">
+					<h2>Game Two</h2>
+					<p>Lorem ipsum dolor sit amet, has discere ornatus cu. Ius erat labores iudicabit in. Per ea volumus appellantur, ferri idque petentium vel eu. Fabulas delectus eum eu. Sit et partiendo dissentiet. Qui et mutat salutandi.</p>
+					<p>Eum et elit dicit disputando, ex has meis dicam adolescens, quod sumo te pri. Exerci eligendi et sea. Ad pro noster voluptatibus. Ea regione verterem pri. Te mucius aliquip perpetua ius. Nullam tibique delicatissimi sed eu, ad mel decore accusam percipit. Purto consul ex quo, liber oportere cu mel, natum facilis liberavisse an his.</p>
+					<!-- Link to start the game -->
+					<div class="play-button">
+						<a class="inactive" href="#">PLAY</a>
+					</div>
+				</div>
+			</div>
+			<div id="third-game">
+				<img src="./assets/game3.jpeg">
+				<div class="text">
+					<h2>Game Three</h2>
+					<p>Lorem ipsum dolor sit amet, has discere ornatus cu. Ius erat labores iudicabit in. Per ea volumus appellantur, ferri idque petentium vel eu. Fabulas delectus eum eu. Sit et partiendo dissentiet. Qui et mutat salutandi.</p>
+					<p>Eum et elit dicit disputando, ex has meis dicam adolescens, quod sumo te pri. Exerci eligendi et sea. Ad pro noster voluptatibus. Ea regione verterem pri. Te mucius aliquip perpetua ius. Nullam tibique delicatissimi sed eu, ad mel decore accusam percipit. Purto consul ex quo, liber oportere cu mel, natum facilis liberavisse an his.</p>
+					<!-- Inactive play button b/c game is not available -->
+					<div class="play-button">
+						<a class="inactive" href="#">PLAY</a>
+					</div>
+				</div>
+			</div> 
+		</div> 
+	</body>
+</html>

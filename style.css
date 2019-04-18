@@ -1,0 +1,225 @@
+html {
+	height: 100%;
+}
+
+/*BODY*/
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	color: rgba(0,0,0,.5); 
+}
+
+/*TOP*/
+#top {
+	height: 100vh;
+}
+/*LOGO*/
+.logo {
+	display: flex;
+	justify-content: center;
+}
+.logo img {
+	width: 17vw;
+}
+/*NAVBAR*/
+#navbar {
+	/*Design taken from //*http://www.flatuicolorpicker.com/*/
+	margin-top: 1vh;
+	overflow: hidden;
+	box-shadow: 0em 0.375em 1em .7em rgba(0, 0, 0, 0.1);
+}
+nav {
+	/*centering using flex*/
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+nav a {
+	display: inline;
+	padding: 3vh; /*adding padding b/w links*/
+	color: rgba(0,0,0,.5); 
+	font-weight: 800; 
+	font-family: Quicksand, sans-serif;
+	text-transform: uppercase;
+}
+nav a:link {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+/*FEATURED*/
+	/*Reference for grid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout*/
+#featured-game {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	margin-left: 4vh;
+	grid-gap: 6vh; /*gap b/w the two rows*/
+	grid-auto-rows: 54vh;
+	grid-template-areas: 
+	"a a a a b b b b"
+	"a a a a c c c c";
+	align-items: start;
+}
+#featured-game h1{
+	text-transform: uppercase;
+}
+#featured-img {
+	grid-area: a;
+	margin-top: 6vh;
+	height: 50%;
+	border-radius: 20px;
+}
+#featured-img img {
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	box-shadow: 0 .4em .5em .5em rgba(0, 0, 0, 0.1);
+}
+/*FEATURED DESCRIPTION*/
+#featured-description {
+	grid-area: b;
+	max-height: 100%;
+	position: relative;
+ 	overflow: hidden;
+	padding-top: 2vh;
+	padding-right: 2vw;
+}
+/*Reference for read-more text-fade: https://css-tricks.com/text-fade-read-more/*/
+#featured-description .read-more-transparent {
+	position: absolute; 
+	bottom: 0; 
+	left: 0;
+	width: 100%; 
+	display: block;
+	text-align: center; 
+	margin: 0; padding: 30px 0; 
+ 	background-image: linear-gradient(to bottom, transparent, white);
+}
+#featured-description h1{
+	text-align: center;
+}
+#featured-description p {
+     font-size: 20px;
+	line-height: 1.7em;
+}
+/*FEATURED BUTTONS*/
+#featured-buttons {
+	grid-area: c; 
+}
+#featured-buttons a {
+	padding: 2vh; 
+}
+/*Individual Buttons*/
+.featured-button {
+	color: rgba(0,0,0,.5);
+	font-size: 22px;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 3%;
+	/*Underline Animation Reference: https://codepen.io/Wking/pen/BdmpVx found on this list: https://speckyboy.com/underline-text-effects-css/*/
+	background-image: linear-gradient(120deg, rgba(232, 236, 241, 1) 0%, rgba(232, 236, 241, 1) 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 0.25s ease-in;
+}
+.featured-button:hover {
+	background-size: 100% 100%;
+}
+/*Read-More Button*/
+	/*making the button look like the links*/
+button {
+	font-family:'Quicksand', sans-serif;
+	font-size: 16px;
+	border-radius: 20px;
+	border: 0px;
+	background-color: transparent;
+}
+button:focus {
+	outline: 0;  /*removing that weird blue outline that appears when you click the button on Google Chrome*/
+}
+/*Play Link*/
+#play {
+	margin-left: 5vh;
+}
+
+/*ABOUT GAMES*/
+#games {
+	padding-top: 5vh;
+	padding-left: 8vh;
+}
+#games h1 {
+	text-transform: uppercase;
+}
+#games img {
+	border-radius: 20px;
+	justify-content: flex-start;
+	box-shadow: 0 .1em .5em .3em rgba(0, 0, 0, 0.1);
+}
+/*displaying the image and text side-by-side using flexbox*/
+#first-game, #second-game, #third-game {
+	display: flex;
+	padding-bottom: 3%
+}
+.text {
+	justify-content: flex-end;
+	padding-left: 3%;
+	padding-right: 20%;
+}
+/*PLAY BUTTON*/
+.play-button {
+	margin-top: 3vh;
+	font-size: 24px;
+	color: rgba(0,0,0,.5);
+	text-decoration: none;
+}
+.play-button a {
+	padding: 2vh;
+}
+/*Active Buttons*/
+.active {
+	text-decoration: none;
+	color: rgba(0,0,0,.5);
+	/*Unline Effect*/
+	background-image: linear-gradient(120deg, rgba(232, 236, 241, 1) 0%, rgba(232, 236, 241, 1) 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 0.25s ease-in;
+}
+.active:hover {
+	background-size: 100% 100%;
+}
+/*Inactive Buttons*/
+.inactive {
+	color: black;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	opacity: 0.3;
+}
+
+/*MEDIA SCREEN (for bigger screen sizes)*/
+@media screen and (min-width: 1800px) {
+  #featured-description p
+  {
+	font-size: 20px;
+	line-height: 2.1em;
+  }
+  #featured-description h1
+  {
+	font-size: 40px;
+  }
+
+  #featured-description h2
+  {
+	font-size: 30px;
+  }
+  .text 
+  {
+  	line-height: 1.8em;
+  }
+}

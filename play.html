@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choose Your Own Adventure</title>
+		<link rel="stylesheet" type="text/css" href="play.css">
+		<script src="script.js" defer></script>
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Palanquin+Dark|Quicksand|Raleway" rel="stylesheet">
+		<link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/globe-icon.png">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<div id="top">
+			<div id="navbar">
+				<nav>
+					<a href="./index.html#games" class="other-links">Games</a>
+					<a href="./index.html"><img src="./assets/graphic.PNG"></a>
+					<a href="about.html" class="other-links">About</a>
+				</nav>
+			</div>
+			<!-- INITIAL SCENARIO -->
+			<div id="scenario">
+				<!-- scenario content gets changed depending on the options the user clicks -->
+				<h1 class="h1_scenario">So the adventure begins...</h1>
+				<p class="p1_scenario">Lorem ipsum dolor sit amet, pri salutatus interesset at. Nonumy doctus definitiones et quo. Liber populo reprimique vis no, enim choro consulatu per te. Ex sed animal delectus, te mazim periculis interpretaris his, quas homero ei vis. Etiam dolore ut sit.</p>
+				<p class="p2_scenario">Mel ut hinc exerci gloriatur, in aeterno partiendo referrentur vix. Eu cum malorum delectus. Cum ne placerat omittantur dissentiet. Modus indoctum rationibus est cu. Dolor eligendi definitiones usu no, et per discere fierent.</p>
+				<p class="p3_scenario">Justo liberavisse nam cu, quo nonumy similique ea. Eum et corpora invidunt, mollis nominati qualisque duo in, eos exerci virtute patrioque ex. Ei mel commodo denique, id eam illud affert aliquip. Denique ullamcorper in vel, laudem timeam vel et. Duo no hinc tamquam, ne his aeterno adipisci. Harum labore platonem vim ea, ex duo soluta lucilius sententiae.</p>
+			</div>
+		</div> <!-- end of #top -->
+		<!-- OPTION BUTTONS -->
+
+		<div id="options">
+			<!-- initial option functions that get changed -->
+			<button type="button" onclick="option_1()" id="option_1">Option 1</button>
+			<button type="button" onclick="option_2()" id="option_2">Option 2</button>
+		</div>
+		
+		<!-- RESULT -->
+		<div id="user-result" style="display: none;">
+			<!-- result changes depending on the options the user chooses -->
+			<h1 class="result-h1">In ubique prodesset sed,</h1>
+			<p class="result-p1">Lorem ipsum dolor sit amet, ad lucilius partiendo vis. Docendi singulis vim ei, sale debet te sea. At magna efficiantur delicatissimi quo, dico semper causae nam te. Vim ei putant salutandi dignissim, dicat option corpora sea et.</p>
+			<div class="play-button">
+				<!-- link to game -->
+				<a class="active" href="play.html">PLAY AGAIN?</a>
+				<!-- goes back to homepage game div -->
+				<a class="active" href="index.html#games">MORE GAMES</a>
+			</div>
+		</div>
+	</body>
+</html>

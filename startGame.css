@@ -1,0 +1,141 @@
+html {
+	height: 100%;
+}
+/*BODY*/
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	color: rgba(0,0,0,.5); 
+}
+
+/*NAVBAR*/
+#navbar {
+	/*Design taken from //*http://www.flatuicolorpicker.com/*/
+	overflow: hidden;
+	box-shadow: 0em 0.375em 1em .1em rgba(0, 0, 0, 0.1);
+}
+nav {
+	/*centering using flex*/
+	display: flex;
+	justify-content: center;
+}
+nav a {
+	display: inline;
+	color: rgba(0,0,0,.5);
+	font-weight: 800; 
+	font-family: Quicksand, sans-serif;
+	text-transform: uppercase;
+	padding: 3vh; 
+}
+nav a:link {
+    border-bottom: none;
+    text-decoration: none;
+}
+nav img {
+	width: 6.5vw;
+}
+.other-links {
+	margin-top: 2vh;
+}
+
+/*HERO*/
+#hero {
+	height: 100%;
+	overflow: hidden;
+    position: relative;
+}
+/*GAME HEADING*/
+#flex-heading {
+	margin-top: -12vh;
+	height: 100%;
+	/*centering using flexbox*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.game-heading {
+	color: rgba(0,0,0,.5);
+	text-align: center;
+  }
+.game-heading h1{
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+.game-heading h3 {
+	margin-bottom: 8vh;
+}
+
+/*PLAY AND INSTRUCTIONS LINK*/
+.active {
+	margin: 4vh;
+	padding: 2vh;
+	text-decoration: none;
+	color: rgba(0,0,0,.5);
+	font-weight: 600;
+	/*Underline Effect*/
+	background-image: linear-gradient(120deg, rgba(232, 236, 241, 1) 0%, rgba(232, 236, 241, 1) 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 0.25s ease-in;
+}
+.active:hover {
+	background-size: 100% 100%;
+}
+/*INSTRUCTIONS BUTTON*/
+button {
+	font-family:'Quicksand', sans-serif;
+	font-size: 16px;
+	border-radius: 20px;
+	border: 0px;
+	background-color: transparent;
+}
+button:focus {
+	outline: 0; /*removing weird outline from button*/
+}
+	
+
+/*INSTRUCTIONS CONTAINER*/
+#instructions {
+	height: 100vh;
+	width: 100vh;
+	/*flex centering*/
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/*centering text in the middle*/
+	line-height: 1.8;
+	margin-left: auto;
+    margin-right: auto;
+}
+/*Play Link*/
+.play-instructions {
+	/*centering link using flex*/
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	/*Underline Effect*/
+	background-image: linear-gradient(120deg, rgba(232, 236, 241, 1) 0%, rgba(232, 236, 241, 1) 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: all .5s ease;
+
+	padding: 2vh;
+	color: rgba(0,0,0,.5); 
+}
+.play-instructions:hover {
+	box-shadow: 0em 0.375em 1em .1em rgba(0, 0, 0, 0.1);
+}
+
+/*MEDIA SCREEN (for large screens)*/
+@media screen and (min-width: 1900px) {
+  #instructions {
+    width: 60vh;
+    font-size: 130%;
+  }
+
+}
